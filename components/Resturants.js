@@ -27,6 +27,7 @@ export default function Resturants() {
             padding: 15,
             marginTop: 10,
           }}
+          key={index}
         >
           <ResturantImage index={item} />
           <ResturantInfo />

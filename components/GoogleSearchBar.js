@@ -2,6 +2,7 @@ import { View, Text } from "react-native";
 import React from "react";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import { Ionicons, AntDesign } from "react-native-vector-icons/";
+import { REACT_GOOGLE_LOCATION_API } from "@env";
 
 export default function GoogleSearchBar() {
   return (
@@ -12,6 +13,7 @@ export default function GoogleSearchBar() {
       }}
     >
       <GooglePlacesAutocomplete
+        query={{ key: `${REACT_GOOGLE_LOCATION_API}` }}
         placeholder="Search your city"
         styles={{
           textInput: {
