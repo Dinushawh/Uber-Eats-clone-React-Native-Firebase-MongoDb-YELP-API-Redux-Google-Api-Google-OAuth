@@ -31,7 +31,8 @@ export default function Home() {
       <Divider
         style={{
           borderTopLeftRadius: 10,
-          borderTopRightRadius: 10,
+          borderTopRightRadius: 105,
+          backgroundColor: "white",
         }}
       >
         <BottomTabs />

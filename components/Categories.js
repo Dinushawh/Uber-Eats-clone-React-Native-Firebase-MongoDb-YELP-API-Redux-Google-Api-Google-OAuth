@@ -35,8 +35,8 @@ export default function Categories() {
     >
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         {items.map((item, index) => (
-          <TouchableOpacity>
-            <View style={{ alignItems: "center", marginRight: 30 }} key={index}>
+          <TouchableOpacity key={index}>
+            <View style={{ alignItems: "center", marginRight: 30 }}>
               <View
                 style={{
                   width: 100,
