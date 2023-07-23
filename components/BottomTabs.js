@@ -36,7 +36,7 @@ export default function BottomTabs() {
       }}
     >
       {items.map((item, index) => (
-        <BottomButton index={item} />
+        <BottomButton item={item} index={index} />
       ))}
     </View>
   );
@@ -49,8 +49,14 @@ const BottomButton = (props) => (
         alignItems: "center",
       }}
     >
-      <FontAwesome5 name={props.index.icon} size={25} style={{}}></FontAwesome5>
-      <Text>{props.index.name}</Text>
+      <View key={props.index}>
+        <FontAwesome5
+          name={props.item.icon}
+          size={25}
+          style={{}}
+        ></FontAwesome5>
+        <Text>{props.item.name}</Text>
+      </View>
     </TouchableOpacity>
   </>
 );

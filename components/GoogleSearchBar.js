@@ -14,6 +14,7 @@ export default function GoogleSearchBar() {
     >
       <GooglePlacesAutocomplete
         query={{ key: `${REACT_GOOGLE_LOCATION_API}` }}
+        onPress={getData}
         placeholder="Search your city"
         styles={{
           textInput: {
@@ -59,3 +60,7 @@ export default function GoogleSearchBar() {
     </View>
   );
 }
+
+const getData = (data, details = null) => {
+  console.log(data.description);
+};
