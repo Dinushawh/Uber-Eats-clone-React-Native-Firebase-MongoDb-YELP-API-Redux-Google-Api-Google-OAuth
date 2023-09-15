@@ -26,7 +26,7 @@ export default function Home() {
         <Categories />
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <Resturants />
+        <Resturants resturantData={resturantData}/>
       </ScrollView>
       <Divider
         style={{

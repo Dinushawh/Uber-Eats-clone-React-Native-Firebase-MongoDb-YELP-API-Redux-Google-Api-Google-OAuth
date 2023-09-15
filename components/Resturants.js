@@ -2,10 +2,10 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { MaterialCommunityIcons } from "react-native-vector-icons";
 
-const items = [
+export const items = [
   {
     image: require("../assets/images/2.jpg"),
-    text: "Burger",
+    text: "Burger",P
   },
   {
     image: require("../assets/images/1.jpg"),
